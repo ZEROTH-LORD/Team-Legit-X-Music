@@ -233,4 +233,4 @@ async def play(_, message: Message):
             reply_markup=buttons,
         )
 
-    return await legit.delete()
+    return await fafallen.delete()
