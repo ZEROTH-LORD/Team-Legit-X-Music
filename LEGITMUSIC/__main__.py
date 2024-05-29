@@ -4,7 +4,7 @@ import os
 
 from pyrogram import idle
 
-from Team_Legit_X_Music import (
+from LEGITMUSIC import (
     ASS_ID,
     ASS_NAME,
     ASS_USERNAME,
@@ -17,7 +17,7 @@ from Team_Legit_X_Music import (
     app2,
     pytgcalls,
 )
-from Team_Legit_X_Music.Modules import ALL_MODULES
+from LEGITMUSIC.Modules import ALL_MODULES
 
 
 async def legit_startup():
