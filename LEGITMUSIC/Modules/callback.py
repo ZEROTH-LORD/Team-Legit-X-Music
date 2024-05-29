@@ -10,7 +10,7 @@ from LEGITMUSIC import (
     BOT_USERNAME,
     LOGGER,
     app,
-    fallendb,
+    legitdb,
     pytgcalls,
 )
 from LEGITMUSIC.help import (
@@ -109,7 +109,7 @@ async def admin_cbs(_, query: CallbackQuery):
         await query.message.delete()
 
     elif data == "skip_cb":
-        get = fallendb.get(query.message.chat.id)
+        get = legitdb.get(query.message.chat.id)
         if not get:
             try:
                 await _clear_(query.message.chat.id)
