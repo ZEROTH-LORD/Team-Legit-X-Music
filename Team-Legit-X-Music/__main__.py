@@ -1,4 +1,3 @@
-
 import asyncio
 import importlib
 import os
@@ -39,19 +38,19 @@ async def legit_startup():
             SUNAME,
             f"✯ Legit ᴍᴜsɪᴄ ʙᴏᴛ ✯\n\n𖢵 ɪᴅ : `{BOT_ID}`\n𖢵 ɴᴀᴍᴇ : {BOT_NAME}\n𖢵 ᴜsᴇʀɴᴀᴍᴇ : @{BOT_USERNAME}",
         )
-    except:
+    except Exception as e:
         LOGGER.error(
-            f"{BOT_NAME} failed to send message at @{SUNAME}, please go & check."
+            f"{BOT_NAME} failed to send message at @{SUNAME}, please go & check. Error: {e}"
         )
 
     try:
         await app2.send_message(
             SUNAME,
-            f"✯ ғᴀʟʟᴇɴ ᴍᴜsɪᴄ ᴀss ✯\n\n𖢵 ɪᴅ : `{ASS_ID}`\n𖢵 ɴᴀᴍᴇ : {ASS_NAME}\n𖢵 ᴜsᴇʀɴᴀᴍᴇ : @{ASS_USERNAME}",
+            f"✯ legit ᴍᴜsɪᴄ ᴀss ✯\n\n𖢵 ɪᴅ : `{ASS_ID}`\n𖢵 ɴᴀᴍᴇ : {ASS_NAME}\n𖢵 ᴜsᴇʀɴᴀᴍᴇ : @{ASS_USERNAME}",
         )
-    except:
+    except Exception as e:
         LOGGER.error(
-            f"{ASS_NAME} failed to send message at @{SUNAME}, please go & check."
+            f"{ASS_NAME} failed to send message at @{SUNAME}, please go & check. Error: {e}"
         )
 
     await app2.send_message(BOT_USERNAME, "/start")
@@ -67,5 +66,5 @@ async def legit_startup():
 
 
 if __name__ == "__main__":
-    asyncio.get_event_loop().run_until_complete(fallen_startup())
+    asyncio.get_event_loop().run_until_complete(legit_startup())
     LOGGER.error("legit Music Bot Stopped.")
