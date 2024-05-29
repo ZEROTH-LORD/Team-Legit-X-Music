@@ -6,3 +6,4 @@ pillow==10.2.0
 psutil
 pyrogram
 py-tgcalls
+python-dotenv
