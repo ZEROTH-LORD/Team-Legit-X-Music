@@ -2,8 +2,8 @@ from pyrogram import filters
 from pyrogram.types import Message
 
 from LEGITMUSIC import SUDOERS, app
-from LEGITMUSIC.Helpers.active import get_active_chats
-from LEGITMUSIC.Helpers.inline import close_key
+from LEGITMUSIC.help.active import get_active_chats
+from LEGITMUSIC.help.inline import close_key
 
 
 @app.on_message(filters.command("activevc") & SUDOERS)
