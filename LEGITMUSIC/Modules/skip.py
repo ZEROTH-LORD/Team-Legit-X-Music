@@ -2,7 +2,7 @@ from pyrogram import filters
 from pyrogram.types import Message
 from pytgcalls.types import AudioPiped, HighQualityAudio
 
-from LEGITMUSIC import BOT_USERNAME, app, fallendb, pytgcalls
+from LEGITMUSIC import BOT_USERNAME, app, legitdb, pytgcalls
 from LEGITMUSIC.help import _clear_, admin_check, buttons, close_key, gen_thumb
 
 
