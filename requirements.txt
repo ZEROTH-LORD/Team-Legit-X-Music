@@ -7,3 +7,4 @@ psutil
 pyrogram
 py-tgcalls
 python-dotenv
+tgcrypto
