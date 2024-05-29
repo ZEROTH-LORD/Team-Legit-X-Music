@@ -104,7 +104,7 @@ async def play(_, message: Message):
         except UserAlreadyParticipant:
             pass
         except Exception as ex:
-            return await legit.edit_text(
+            return await fallen.edit_text(
                 f"ғᴀɪʟᴇᴅ ᴛᴏ ɪɴᴠɪᴛᴇ {BOT_NAME} ᴀssɪsᴛᴀɴᴛ ᴛᴏ {message.chat.title}.\n\n**ʀᴇᴀsᴏɴ :** `{ex}`"
             )
         try:
