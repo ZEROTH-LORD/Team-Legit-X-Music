@@ -23,7 +23,7 @@ from LEGITMUSIC.Modules import ALL_MODULES
 async def legit_startup():
     LOGGER.info("[•] Loading Modules...")
     for module in ALL_MODULES:
-        importlib.import_module("Team_Legit_X_Music.Modules." + module)
+        importlib.import_module("LEGITMUSIC.Modules." + module)
     LOGGER.info(f"[•] Loaded {len(ALL_MODULES)} Modules.")
 
     LOGGER.info("[•] Refreshing Directories...")
