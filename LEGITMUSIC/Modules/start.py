@@ -5,8 +5,8 @@ from youtubesearchpython.__future__ import VideosSearch
 
 import config
 from LEGITMUSIC import BOT_MENTION, BOT_NAME, app
-from LEGITMUSIC.Help import gp_buttons, pm_buttons
-from LEGITMUSIC.Help.dossier import *
+from LEGITMUSIC.help import gp_buttons, pm_buttons
+from LEGITMUSIC.help.dossier import *
 
 
 @app.on_message(filters.command(["start"]) & ~filters.forwarded)
