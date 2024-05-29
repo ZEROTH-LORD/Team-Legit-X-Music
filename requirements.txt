@@ -4,3 +4,4 @@ aiohttp==3.9.3
 numpy==1.26.4
 pillow==10.2.0
 psutil
+pyrogram
