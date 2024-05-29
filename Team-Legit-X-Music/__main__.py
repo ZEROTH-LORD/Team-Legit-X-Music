@@ -4,7 +4,7 @@ import os
 
 from pyrogram import idle
 
-from Team-Legit-X-Music import (
+from Team_Legit_X_Music import (
     ASS_ID,
     ASS_NAME,
     ASS_USERNAME,
@@ -17,13 +17,13 @@ from Team-Legit-X-Music import (
     app2,
     pytgcalls,
 )
-from Team-Legit-X-Music.Modules import ALL_MODULES
+from Team_Legit_X_Music.Modules import ALL_MODULES
 
 
 async def legit_startup():
     LOGGER.info("[•] Loading Modules...")
     for module in ALL_MODULES:
-        importlib.import_module("Team-Legit-X-Music.Modules." + module)
+        importlib.import_module("Team_Legit_X_Music.Modules." + module)
     LOGGER.info(f"[•] Loaded {len(ALL_MODULES)} Modules.")
 
     LOGGER.info("[•] Refreshing Directories...")
